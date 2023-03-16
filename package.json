@@ -16,7 +16,6 @@
     "theme-ui": "^0.15.5"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.18.6",
     "eslint": "^8.36.0"
   }
 }

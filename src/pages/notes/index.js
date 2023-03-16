@@ -13,12 +13,10 @@ export default () => {
       <div sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap'}}>
         {notes.map(note => (
           <div sx={{width: '33%', p: 2}}>
-            <Link key={note.id} href="/notes/[id]" as={`/notes/${note.id}`}>
-              <a sx={{textDecoration: 'none', cursor: 'pointer'}}>
-                <div sx={{variant: 'containers.card',}}>
-                  <strong>{note.title}</strong>
-                </div>
-              </a>
+             <Link key={note.id} href="/notes/[id]" as={`/notes/${note.id}`}>
+              <div sx={{variant: 'containers.card', textDecoration: 'none', cursor: 'pointer'}}>
+                <strong>{note.title}</strong>
+              </div>
             </Link>
           </div>
         ))}
